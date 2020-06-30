@@ -465,3 +465,47 @@ body{
 .copyright_text span{
 	color:#fff;
 }
+
+/* BURGER */
+.burger{
+	display: none;
+}
+
+
+/* MEDIA */
+
+@media (max-width: 991px){
+	
+	/* BURGER */
+	.burger{
+		display: block;	
+	}
+
+	/* NAV */
+	.nav{
+		display: none;
+	}
+	
+	/* INTRO */
+	.intro_title{
+		font-size: 40px;
+	}
+
+
+}
+
+@media (max-width: 767px){
+	
+	/* INTRO */
+	.intro{
+		height: auto;
+		padding-top: 130px;
+		padding-bottom: 130px;
+	}
+	
+	.intro_title{
+		font-size: 30px;
+	}	
+
+	.intro_text{}
+}
