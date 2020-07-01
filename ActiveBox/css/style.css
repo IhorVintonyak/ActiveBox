@@ -469,8 +469,41 @@ body{
 /* BURGER */
 .burger{
 	display: none;
+	cursor: pointer;
+	padding: 9px 0;
+	background: none;
+	border: 0;
 }
 
+.burger_item{
+	display: block;
+	width: 30px;
+	height: 3px;
+	
+		background-color: #fff;
+	font-size: 0;
+	position: relative;
+}
+
+.burger_item:before,
+.burger_item:after{
+
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	position: absolute;
+	left:0;
+	z-index: 1;
+}
+
+.burger_item:before{
+	top:-8px;
+}
+
+.burger_item:after{
+	bottom:-8px;
+}
 
 /* MEDIA */
 
